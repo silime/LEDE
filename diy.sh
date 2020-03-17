@@ -35,6 +35,13 @@ git clone https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk.git package/mento
 #git clone https://github.com/Lienol/openwrt-package.git  package/openwrt-package
 git clone https://github.com/silime/luci-app-kodexplorer.git package/luci-app-kodexplorer
 git clone https://github.com/silime/luci-app-mentohust.git package/luci-app-mentohust
+#git clone https://github.com/rufengsuixing/luci-app-syncdial.git package/luci-app-syncdial
+./scripts/feeds update luci-lib-jsonc
+./scripts/feeds install luci-lib-jsonc
+mkdir -p package/luci-lib-docker && \
+wget https://raw.githubusercontent.com/lisaac/luci-lib-docker/master/Makefile -O package/luci-lib-docker/Makefile
+mkdir -p package/luci-app-dockerman && \
+wget https://raw.githubusercontent.com/lisaac/luci-app-dockerman/master/Makefile -O package/luci-app-dockerman/Makefile
 git clone https://github.com/openwrt-dev/po2lmo.git
 pushd po2lmo
 make && sudo make install
