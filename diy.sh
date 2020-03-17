@@ -23,14 +23,13 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luc
 
 echo '删除旧版kodexplorer'
 rm -rf ./package/lean/luci-app-kodexplorer
-
+rm -rf ./package/lean/luci-app-dockerman
 #echo '修改wifi名称'
 #sed -i 's/OpenWrt/Silime/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 #rm -rf /package/lean/luci-theme-argon
 #git clone https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
 echo '下载自定义软件包'
 git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
-git clone https://github.com/silime/luci-app-xunlei.git package/luci-app-xunlei
 git clone https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk.git package/mentohust
 #git clone https://github.com/Lienol/openwrt-package.git  package/openwrt-package
 git clone https://github.com/silime/luci-app-kodexplorer.git package/luci-app-kodexplorer
