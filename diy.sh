@@ -23,7 +23,7 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luc
 
 echo '删除旧版kodexplorer'
 rm -rf ./package/lean/luci-app-kodexplorer
-rm -rf ./package/lean/luci-app-dockerman
+#rm -rf ./package/lean/luci-app-dockerman
 #echo '修改wifi名称'
 #sed -i 's/OpenWrt/Silime/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 #rm -rf /package/lean/luci-theme-argon
@@ -35,12 +35,12 @@ git clone https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk.git package/mento
 git clone https://github.com/silime/luci-app-kodexplorer.git package/luci-app-kodexplorer
 git clone https://github.com/silime/luci-app-mentohust.git package/luci-app-mentohust
 #git clone https://github.com/rufengsuixing/luci-app-syncdial.git package/luci-app-syncdial
-./scripts/feeds update luci-lib-jsonc
-./scripts/feeds install luci-lib-jsonc
+#./scripts/feeds update luci-lib-jsonc
+#./scripts/feeds install luci-lib-jsonc
 mkdir -p package/luci-lib-docker && \
-wget https://raw.githubusercontent.com/lisaac/luci-lib-docker/master/Makefile -O package/luci-lib-docker/Makefile
-mkdir -p package/luci-app-dockerman && \
-wget https://raw.githubusercontent.com/lisaac/luci-app-dockerman/master/Makefile -O package/luci-app-dockerman/Makefile
+#wget https://raw.githubusercontent.com/lisaac/luci-lib-docker/master/Makefile -O package/luci-lib-docker/Makefile
+#mkdir -p package/luci-app-dockerman && \
+#wget https://raw.githubusercontent.com/lisaac/luci-app-dockerman/master/Makefile -O package/luci-app-dockerman/Makefile
 git clone https://github.com/openwrt-dev/po2lmo.git
 pushd po2lmo
 make && sudo make install
