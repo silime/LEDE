@@ -18,7 +18,7 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   CONFIG_FILE: G-DOCK.config
-  DIY_SH: EDK2
+  DIY_SH: n1.sh
   FREE_UP_DISK: false
   SSH_ACTIONS: true    
   UPLOAD_BIN_DIR: false
